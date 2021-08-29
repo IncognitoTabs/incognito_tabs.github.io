@@ -1,0 +1,98 @@
+@media (min-width : 1024px){
+    #header .menu_btn{
+        display: none;
+    }
+}
+
+@media (min-width : 740px) and (max-width : 1023px){
+    #header .menu_btn{
+        display: none;
+    }
+
+    .subnav > li:hover .subnav{
+        display: none;
+    }
+    
+}
+
+@media (max-width : 740px) {
+    
+    .col{
+        margin: 0;
+    }
+    
+    .row{
+        display: block;
+    
+    }
+    
+    #header{
+        overflow: hidden;
+    }
+
+    #header .search_btn{
+        display: none;
+    }
+
+    #nav,
+    #nav  a,
+    #nav > li{
+        display: block;
+    }
+
+    #nav > li :first-child{
+        display: inline-block;
+    }
+
+    #nav >li:hover > a{
+        background-color: rgb(219, 174, 174);
+        color: black !important;
+        display: block;
+    }
+
+    #nav .subnav{
+        position: initial;
+    }
+
+    .subnav > li:hover .subnav{
+        display: none;
+    }
+
+    #nav .subnav > li > a{
+        padding: 5px 52px;
+    }
+
+    .text-content{
+        display: none;
+    }
+    .col-half,
+    .col-third,
+    .col-fourth {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .col-third{
+        padding: 8px;
+    }
+
+    .member-picture > a > img{
+        padding: 0 calc((100% - 180px)/2);
+        border: 1px solid rgb(219, 174, 174);
+        border-radius: 25px;
+    }
+
+    .member-name{
+        text-shadow: rgba(219, 174, 174,1) 0px 4px 12px;
+        font-weight: 550;
+    }
+
+    .location{
+        border-radius: 25px;
+    }
+
+    .location img,
+    .ticket{
+        border-radius: 18px ;
+    }
+}
