@@ -170,25 +170,26 @@ ul > img{
 
 #slider{
     margin-top: 50px;
-    max-height: 600px;
+    max-height: 700px;
     position: relative;
 }
 
 .slide{
     display: block;
-    /* padding-top: 45%; */
-    background-position: top center ;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
- 
+ .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-orientation: top center;
+ }
 
 .text-content{
     position: absolute;
     left: 0;
     right:0;
-    bottom: 50px;
+    top: 400px;
     text-align: center;
     color: rgb(255, 231, 231);
 }
@@ -196,7 +197,7 @@ ul > img{
 .text-heading{
     margin-bottom: 40px;
     font-size: 25px;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .text-description{
@@ -206,12 +207,16 @@ ul > img{
 
 .transition{
     animation-name: mymove;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 @keyframes mymove{
-    from{opacity: 0.6;}
-    to{opacity: 1;}
+    from{
+        opacity: 0.6;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
