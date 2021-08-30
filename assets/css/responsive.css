@@ -40,10 +40,6 @@
         display: block;
     }
 
-    #nav > li :first-child{
-        display: inline-block;
-    }
-
     #nav >li:hover > a{
         background-color: rgb(219, 174, 174);
         color: black !important;
@@ -85,6 +81,11 @@
     .member-name{
         text-shadow: rgba(219, 174, 174,1) 0px 4px 12px;
         font-weight: 550;
+    }
+
+    .btnBuyTicket{
+        width: 100%;
+        border-radius: 25px;
     }
 
     .location{
