@@ -176,38 +176,13 @@ ul > img{
 
 .slide{
     display: block;
-}
-
- #slide1{
-    padding-top: 45%;
+    /* padding-top: 45%; */
     background-position: top center ;
-    background-image: url('/My_Favorite_BP/assets/img/BP_wallpaper.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*#slide2{
-    padding-top: 45%;
-    background-position: top center ;
-    background-image: url('/My_Favorite_BP/assets/img/BP_wallpaper1.png');
-    background-repeat: no-repeat;
-}
-
-#slide3{
-    padding-top: 45%;
-    background-position: center ;
-    background-image: url('/My_Favorite_BP/assets/img/BP_wallpaper2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#slide4{
-    padding-top: 45%;
-    background-position:bottom center ;
-    background-image: url('/My_Favorite_BP/assets/img/BP_wallpaper4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}  */
+ 
 
 .text-content{
     position: absolute;

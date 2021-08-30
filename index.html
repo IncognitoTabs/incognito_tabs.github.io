@@ -44,7 +44,8 @@
         </div>
 
         <div id="slider">
-            <div class="slide transition" id="slide1">
+            <div class="slide transition">
+                <img src="./assets/img/BP_Wallpaper5.jpg" width="100%" alt="wallpaper1">
                 <div class="text-content">
                     <h2 class="text-heading">"Square Two"</h2>
                     <div class="text-description">
@@ -52,7 +53,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slide transition" id="slide2">
+            <div class="slide transition">
+                <img src="./assets/img/BP_wallpaper.jpg" width="100%" alt="wallpaper">
                 <div class="text-content">
                     <h2 class="text-heading">"Square Two"</h2>
                     <div class="text-description">
@@ -60,7 +62,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slide transition" id="slide3">
+            <div class="slide transition">
+                <img src="./assets/img/BP_wallpaper2.png" width="100%" alt="wallpaper">
                 <div class="text-content">
                     <h2 class="text-heading">"Square Two"</h2>
                     <div class="text-description">
@@ -68,7 +71,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slide transition" id="slide4">
+            <div class="slide transition">
+                <img src="./assets/img/BP_wallpaper3.jpg" width="100%" alt="wallpaper">
                 <div class="text-content">
                     <h2 class="text-heading">"Square Two"</h2>
                     <div class="text-description">
@@ -335,7 +339,21 @@
                 }
             }
         });
+    </script>
+    <script>
+        var slideIndex = 0;
+        var slides = document.getElementsByClassName("slide");
+        showSlides();
 
+    function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}; 
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2500); // Change image every 2 seconds
+    }
     </script>
 </body>
 </html>
