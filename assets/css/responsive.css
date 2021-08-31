@@ -99,6 +99,10 @@
         border-radius: 25px;
     }
 
+    .location-image:hover{
+        border-radius: inherit;
+    }
+
     .location img,
     .ticket{
         border-radius: 18px ;
