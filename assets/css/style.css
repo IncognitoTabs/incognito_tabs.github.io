@@ -351,13 +351,16 @@ ul > img{
     border: 0;
     cursor: pointer;
     font-size: 16px;
+    position: relative;
 }
 
-button::before{
+.btnBuyTicket::before{
     content: '';
     position: absolute;
     top: 0;
     left:auto;
+    bottom: 0;
+    right: 0;
     width: 0;
     height: 100%;
     z-index: 1;
@@ -366,7 +369,7 @@ button::before{
     color: black !important;
 }
 
-button:hover ::before{
+.btnBuyTicket:hover ::before{
     left: 0;
     width: 100%;
     right: auto;
