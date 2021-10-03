@@ -354,7 +354,7 @@ ul > img{
 }
 
 button::before{
-    content: none;
+    content: '';
     position: absolute;
     top: 0;
     left:auto;
