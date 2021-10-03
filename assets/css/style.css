@@ -353,9 +353,23 @@ ul > img{
     font-size: 16px;
 }
 
-button:hover{
+button::before{
+    content: none;
+    position: absolute;
+    top: 0;
+    left:auto;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.2s linear;
     background-color: rgb(219, 174, 174) !important;
     color: black !important;
+}
+
+button:hover ::before{
+    left: auto;
+    width: 100%;
+    right: 0;
 }
 
 .contact{
@@ -427,21 +441,7 @@ button:hover{
     cursor: pointer;
 }
 
-.close-icon::before{
-    content: none;
-    position: absolute;
-    top: 0;
-    left:auto;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    transition: all 0.2s linear;
-}
-
-.close-icon:hover::before{
-    left: auto;
-    width: 100%;
-    right: 0;
+.close-icon:hover{
     background-color: rgb(219, 174, 174);
     color: black;
     font-weight: 1000;
