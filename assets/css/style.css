@@ -367,7 +367,7 @@ ul > img{
     transition: all 0.2s linear;
 }
 
-.btnBuyTicket:hover :before{
+.btnBuyTicket:hover{
     left: 0;
     width: 100%;
     right: auto;
