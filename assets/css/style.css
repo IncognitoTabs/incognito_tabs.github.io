@@ -365,14 +365,14 @@ ul > img{
     height: 100%;
     z-index: -1;
     transition: all 0.2s linear;
-    background-color: rgb(219, 174, 174) !important;
-    color: black !important;
 }
 
 .btnBuyTicket:hover :before{
     left: 0;
     width: 100%;
     right: auto;
+    background-color: rgb(219, 174, 174) !important;
+    color: black !important;
 }
 
 .contact{
