@@ -354,7 +354,7 @@ ul > img{
     position: relative;
 }
 
-.btnBuyTicket::before{
+.btnBuyTicket :before{
     content: '';
     position: absolute;
     top: 0;
@@ -369,7 +369,7 @@ ul > img{
     color: black !important;
 }
 
-.btnBuyTicket:hover ::before{
+.btnBuyTicket:hover :before{
     left: 0;
     width: 100%;
     right: auto;
